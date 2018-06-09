@@ -1,4 +1,4 @@
-# Infomation-Communication
+# Information-Communication
 ## dct
 When you exec dct.py in "dct", you can see spectrum.
 
