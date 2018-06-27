@@ -31,7 +31,7 @@ def generate_psk(signal, N, fc):
     wave0 = np.sin(2 * np.pi * t/N * fc)
     wave1 = np.sin(2 * np.pi * t/N * fc + np.pi)
     for i in signal:
-        if i == 0:
+        if i == 1:
             psk.extend(wave0)
         else:
             psk.extend(wave1)
