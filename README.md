@@ -22,3 +22,15 @@ $ python R2Z.py
 filename: data.txt
 ```
 ## broadband_transmission
+### Analog Modulation
+* Amplitude Modulation
+* Frequency Modulation
+* Phase Modulation
+I implemented only amplitude modulation.
+
+### Degital Modulation
+* ASK(Amplitude Shift Keying)
+* FSK(Frequency Shift Keying)
+* PSK(Phase Shift Keying)
+* APK(Amplitude Phase shift Keying)
+* QAM(Quardrature Amplitude Modulation)
