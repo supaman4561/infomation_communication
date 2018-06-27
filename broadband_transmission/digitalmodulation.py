@@ -37,6 +37,25 @@ def generate_psk(signal, N, fc):
             psk.extend(wave1)
     return psk
 
+def generate_qpsk(signal, N, fc):
+    qpsk = []
+    t = np.arange(0, N)
+    wave0 = np.cos(2 * np.pi * t/N * fc)
+    wave1 = np.sin(2 * np.pi * t/N * fc)
+    wave2 = -1 * wave0
+    wave3 = -1 * wave1
+    for i in signal:
+        if i == "00":
+            qpsk.extend(wave0)
+        if i == "01":
+            qpsk.extend(wave1)
+        if i == "10":
+            qpsk.extend(wave2)
+        if i == "11":
+            qpsk.extend(wave3)
+    return qpsk
+
+
 if __name__ == '__main__':
     N = 128  # number of sampling points
     fc = 4   # frequency of carrier wave
