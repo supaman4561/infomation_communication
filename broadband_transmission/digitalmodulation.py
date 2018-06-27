@@ -28,8 +28,8 @@ def generate_fsk(signal, N, fc):
 def generate_psk(signal, N, fc):
     psk = []
     t = np.arange(0, N)
-    wave0 = np.sin(2 * np.pi * t/N * fc)
-    wave1 = np.sin(2 * np.pi * t/N * fc + np.pi)
+    wave0 = np.cos(2 * np.pi * t/N * fc)
+    wave1 = np.cos(2 * np.pi * t/N * fc + np.pi)
     for i in signal:
         if i == 1:
             psk.extend(wave0)
